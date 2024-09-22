@@ -46,4 +46,4 @@ input[type="radio"]:checked::before {
 /* Optional: Add hover effect */
 input[type="radio"]:hover {
     background-color: rgba(58, 35, 39, 0.712); /* Light pink background on hover */
-}
+}  
