@@ -37,7 +37,7 @@ def read_files(directory):
         os.makedirs(output_dir, exist_ok=True)
     
         # Save the final DataFrame to a new CSV file inside the output directory
-        final_df.to_csv(os.path.join(output_dir, "sales_data.csv"), index=False)
+        final_df.to_csv(os.path.join(output_dir, "processed_sales_data.csv"), index=False)
 
 
 
