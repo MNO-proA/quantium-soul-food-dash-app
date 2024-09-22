@@ -28,7 +28,9 @@ def read_files(directory):
 
         # # Concatenate all DataFrames into a single DataFrame
         final_df = pd.concat(dataframes, ignore_index=True)
-        
+
+        # sort data by date
+        final_df = final_df.sort_values('date')
 
         # Create the output directory if it doesn't exist
         output_dir = 'output'
