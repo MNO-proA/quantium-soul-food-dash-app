@@ -1,0 +1,49 @@
+body {
+    background-color: #d6d6d6;
+    font-family: Arial, sans-serif;
+}
+
+
+.header{
+    color: #d87093;
+    font-weight: bold;
+    text-align: center;
+}
+
+.radio-items {
+    text-align: center;
+}
+
+
+/* Style the radio button */
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Style the radio button when selected */
+input[type="radio"]:checked::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(226, 32, 64);
+
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    }
+
+/* Optional: Add hover effect */
+input[type="radio"]:hover {
+    background-color: rgba(58, 35, 39, 0.712); /* Light pink background on hover */
+}
